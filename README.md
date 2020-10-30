@@ -1,1 +1,6 @@
 # Nonconvex_by_Gurobi
+GUROBI9.0能够支持求解非凸NLP问题了(牛逼!)
+看了下大致原理是将RLT松弛嵌套在一个分支定界算法中
+相当于是一个不断紧凑的McCormick包络，等价于求解一个MIP问题(归根到底还是Gurobi的分支定界算法牛逼啊。。
+YALMIP还没更新 不能直接调用Gurobi求解Nonconvex问题 不开熏
+于是尝试YALMIP跟Gurobi直接编程相结合。。
